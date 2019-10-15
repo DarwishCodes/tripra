@@ -1,2 +1,2 @@
 # tripra
-A beautiful login card section built with CSS and SASS.(For deskyop use only)
+A beautiful login card section built with CSS and SASS.(Not yet responsive for phones and tablets)
