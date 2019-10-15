@@ -1,0 +1,23 @@
+.login {
+    background-color: $color-cyan;
+    min-height: 100vh;
+    padding: 5rem;
+
+    &__form {
+
+    }
+
+    &__login-with-box {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__login-with-link {
+        text-decoration: none;
+        font-size: $default-font-size;
+        margin-right: 2rem;
+        font-weight: 700;
+        color: $color-primary;
+    }
+}

@@ -1,0 +1,27 @@
+.header {
+    
+    &__heading-box {
+        padding-top: 17rem;
+    }
+
+    &__heading {
+        font-size: 5rem;
+        color: $color-primary;
+    }
+
+    &__text {
+        font-size: $default-font-size;
+        color: $color-secondary;
+        font-weight: 700;
+    }
+
+    &__info-box {
+        margin-top: 17rem;
+    }
+
+    &__info {
+        font-size: $default-font-size;
+        color: $color-primary;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,51 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 15px;
+        font-weight: 700;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+    }
+
+    &--filled-pink {
+        color: $color-white;
+        border: 3px solid $color-secondary;
+        background-color: $color-secondary;
+    }
+
+    &--filled-blue {
+        color: $color-white;
+        border: 3px solid $color-primary;
+        background-color: $color-primary;
+    }
+
+    &--ghost-blue {
+        color: $color-primary;
+        border: 3px solid $color-primary;
+        background-color: $color-white;
+    }
+}
