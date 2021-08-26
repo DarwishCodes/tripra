@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
-        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
-        <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title id="title"></title>
-    </head>
-	
-	<body>
-        <header class="header">
-            <div class="navigation">
-                <div class="row">
-                    <div class="col-1-of-2">
-                        <div class="navigation__container">
-                            <div class="navigation__logo-box">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title id="title"></title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="navigation">
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="navigation__container">
+                        <div class="navigation__logo-box">
                             <span class="navigation__logo">tripra</span>
-                            </div>
-                            <nav class="navigation__nav">
-                                <ul class="navigation__list">
-                                    <li class="navigation__item"><a href="#" class="navigation__link">travel</a></li>
-                                    <li class="navigation__item"><a href="#" class="navigation__link">agent</a></li>
-                                    <li class="navigation__item"><a href="#" class="navigation__link">hotel</a></li>
-                                    <li class="navigation__item"><a href="#" class="navigation__link">ticket</a></li>
-                                    <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
-                                </ul>
-                            </nav>
+                        </div>
+                        <nav class="navigation__nav">
+                            <ul class="navigation__list">
+                                <li class="navigation__item"><a href="#" class="navigation__link">travel</a></li>
+                                <li class="navigation__item"><a href="#" class="navigation__link">agent</a></li>
+                                <li class="navigation__item"><a href="#" class="navigation__link">hotel</a></li>
+                                <li class="navigation__item"><a href="#" class="navigation__link">ticket</a></li>
+                                <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="header__heading-box">
                         <h1 class="header__heading">Travel to the best beautiful place</h1>
                         <p class="header__text">holiday - honeymoon - ship tour's</p>
                     </div>
-                    <div class="u-margin-top-large">
+                    <div class="u-margin-top-large u-padding-left-small">
                         <a href="#" class="btn btn--filled-blue">Get Start</a>
                     </div>
                     <div class="header__info-box">
                         <p class="header__info">128 Curtis Ferry, New Yourk, USA<br>info@tripratour.com</p>
                     </div>
-                    </div>
-                    <div class="col-1-of-2">
-                        <div class="login">
-                            <div class="login__form">
-                                <form class="form" action="#">
-                                    <div class="u-padding-top-large">
-                                        <h2 class="heading-secondry">Login into account</h2>
-                                    </div>
-                                    <div class="u-margin-top-small u-margin-bottom-small">
-                                        <p class="paragraph">Use your credentials to access your account.</p>
-                                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="login">
+                        <div class="login__form">
+                            <form class="form" action="#">
+                                <div class="u-padding-top-large">
+                                    <h2 class="heading-secondry">Login into account</h2>
+                                </div>
+                                <div class="u-margin-top-small u-margin-bottom-small">
+                                    <p class="paragraph">Use your credentials to access your account.</p>
+                                </div>
 
 
+                                <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Email" id="email">
+                                    <label class="form__label" for="email"><i
+                                            class="icon ion-md-mail form__icon"></i></label>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="password" class="form__input" placeholder="Password" id="password">
+                                    <label class="form__label" for="password"><i
+                                            class="icon ion-md-lock form__icon"></i></label>
+                                </div>
+                                <a href="#" class="form__forgot-pass">forgot password?</a>
+                                <div class="u-margin-top-large">
                                     <div class="form__group">
-                                        <input type="text" class="form__input" placeholder="Email" id="email">
-                                        <label class="form__label" for="email"><i class="icon ion-md-mail form__icon"></i></label>
-                                    </div>
-
-                                    <div class="form__group">
-                                        <input type="password" class="form__input" placeholder="Password" id="password">
-                                        <label class="form__label" for="password"><i class="icon ion-md-lock form__icon"></i></label>
-                                    </div>
-                                    <a href="#" class="form__forgot-pass">forgot password?</a>
-                                    <div class="u-margin-top-large">
                                         <button class="btn btn--filled-pink form__btn-login">Login</button>
                                         <button class="btn btn--ghost-blue form__btn-register">Register</button>
                                     </div>
-                                    <div class="login__login-with-box u-margin-top-large">
-                                        <p class="paragraph">or login with</p>
-                                        <br>
-                                        <a href="#" class="login__login-with-link">Facebool</a>
-                                        <a href="#" class="login__login-with-link">google</a>
-                                        <a href="#" class="login__login-with-link">Twitter</a>
-                                    </div>
-                                </form>
 
-                            </div>
+                                </div>
+                                <div class="login__login-with-box u-margin-top-large">
+                                    <p class="paragraph">or login with</p>
+                                    <br>
+                                    <a href="#" class="login__login-with-link">Facebool</a>
+                                    <a href="#" class="login__login-with-link">google</a>
+                                    <a href="#" class="login__login-with-link">Twitter</a>
+                                </div>
+                            </form>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-	</body>
-	
+        </div>
+    </header>
+</body>
+
 </html>

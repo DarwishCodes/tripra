@@ -1,9 +1,16 @@
 .navigation {
-    padding-top: 1rem;
+    // padding-top: 1rem;
 
     // &__logo-box {
 
     // }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
 
     &__logo {
         font-size: 2.4rem;
@@ -13,10 +20,20 @@
         display: flex;
         list-style: none;
         justify-content: space-around;
+
+        @include addMediaQuery(phone-m) {
+            flex-direction: column;
+        }
     }
 
     &__item {
         margin-right: 2rem;
+
+        @include addMediaQuery(phone-m) {
+            margin-bottom: 1rem;
+            margin-right: 0;
+            text-align: center;
+        }
     }
 
     &__link {
@@ -24,6 +41,14 @@
         text-decoration: none;
         color: $color-primary;
         font-weight: 700;
+
+        @include addMediaQuery(laptop) {
+            font-size: 1.3rem;
+        }
+
+        @include addMediaQuery(phone-m) {
+            font-size: 1.6rem;
+        }
     }
 
     &__container {
@@ -31,5 +56,11 @@
         justify-content: space-around;
         align-content: center;
         padding-top: 2rem;
+
+        @include addMediaQuery(tablet) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }

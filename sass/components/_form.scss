@@ -6,6 +6,12 @@
 
     &__group {
         position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        @include addMediaQuery(tablet) {
+            flex-direction: column;
+        }
     }
 
     &__input {
@@ -17,7 +23,7 @@
         background-color: rgba($color-white, .5);
         border: none;
         border-bottom: 3px solid transparent;
-        width: 90%;
+        width: 100%;
         display: block;
         transition: all .3s;
 
@@ -51,14 +57,16 @@
     }
 
     &__btn-login {
-        width: 40%;
-        float: left;
+
+        @include addMediaQuery(tablet) {
+            margin-bottom: 2rem;
+        }
     }
 
-    &__btn-register {
-        width: 40%;
-        float: right;
-        margin-right: 3.6rem;
-    }
+    // &__btn-register {
+    //     width: 40%;
+    //     float: right;
+    //     margin-right: 3.6rem;
+    // }
 
 }

@@ -2,6 +2,7 @@
     
     &__heading-box {
         padding-top: 17rem;
+        padding-left: 2rem;
     }
 
     &__heading {
@@ -16,12 +17,16 @@
     }
 
     &__info-box {
-        margin-top: 17rem;
+        margin-top: 8rem;
     }
 
     &__info {
         font-size: $default-font-size;
         color: $color-primary;
         font-weight: 700;
+
+        @include addMediaQuery(phone-l) {
+            padding: 0 2rem;
+        }
     }
 }
