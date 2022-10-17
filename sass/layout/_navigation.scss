@@ -1,66 +1,65 @@
 .navigation {
-    // padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding-top: 2rem;
+  padding-left: 2rem;
 
-    // &__logo-box {
+  @include addMediaQuery(tablet) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    // }
+  &__nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
 
-    &__nav {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: center;
+  &__logo {
+    font-size: 2.4rem;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+    @include addMediaQuery(phone-m) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    margin-right: 2rem;
+
+    @include addMediaQuery(phone-m) {
+      margin-bottom: 1rem;
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    color: $color-primary;
+    font-weight: 700;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateY(-3px);
     }
 
-    &__logo {
-        font-size: 2.4rem;
-    }
-    
-    &__list {
-        display: flex;
-        list-style: none;
-        justify-content: space-around;
-
-        @include addMediaQuery(phone-m) {
-            flex-direction: column;
-        }
+    @include addMediaQuery(laptop) {
+      font-size: 1.3rem;
     }
 
-    &__item {
-        margin-right: 2rem;
-
-        @include addMediaQuery(phone-m) {
-            margin-bottom: 1rem;
-            margin-right: 0;
-            text-align: center;
-        }
+    @include addMediaQuery(phone-m) {
+      font-size: 1.6rem;
     }
-
-    &__link {
-        font-size: 2rem;
-        text-decoration: none;
-        color: $color-primary;
-        font-weight: 700;
-
-        @include addMediaQuery(laptop) {
-            font-size: 1.3rem;
-        }
-
-        @include addMediaQuery(phone-m) {
-            font-size: 1.6rem;
-        }
-    }
-
-    &__container {
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-        padding-top: 2rem;
-
-        @include addMediaQuery(tablet) {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-    }
+  }
 }

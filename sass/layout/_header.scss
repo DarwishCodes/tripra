@@ -1,32 +1,35 @@
 .header {
-    
-    &__heading-box {
-        padding-top: 17rem;
-        padding-left: 2rem;
-    }
+  padding: 0 2rem;
 
-    &__heading {
-        font-size: 5rem;
-        color: $color-primary;
-    }
+  @include addMediaQuery(tablet) {
+    text-align: center;
+  }
 
-    &__text {
-        font-size: $default-font-size;
-        color: $color-secondary;
-        font-weight: 700;
-    }
+  @include addMediaQuery(phone-l) {
+    padding: 0 2rem;
+  }
+  &__heading-box {
+    padding-top: 17rem;
+  }
 
-    &__info-box {
-        margin-top: 8rem;
-    }
+  &__heading {
+    font-size: 5rem;
+    color: $color-primary;
+  }
 
-    &__info {
-        font-size: $default-font-size;
-        color: $color-primary;
-        font-weight: 700;
+  &__text {
+    font-size: $default-font-size;
+    color: $color-secondary;
+    font-weight: 700;
+  }
 
-        @include addMediaQuery(phone-l) {
-            padding: 0 2rem;
-        }
-    }
+  &__info-box {
+    margin-top: 8rem;
+  }
+
+  &__info {
+    font-size: $default-font-size;
+    color: $color-primary;
+    font-weight: 700;
+  }
 }

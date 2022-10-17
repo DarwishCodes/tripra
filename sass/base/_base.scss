@@ -1,21 +1,22 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: $font-family-main, $font-family-second;
-    box-sizing: border-box;
+  font-family: $font-family-main, $font-family-second;
+  box-sizing: border-box;
 }
 
 ::selection {
-    background-color: $color-primary;
-    color: $color-white;
+  background-color: $color-primary;
+  color: $color-white;
 }
